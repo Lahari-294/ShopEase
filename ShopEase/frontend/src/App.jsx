@@ -23,7 +23,7 @@ function Home() {
   const [showCart, setShowCart] = useState(false);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/products")
+      .get("https://shopease-backend-2rjx.onrender.com/api/products")
       .then((response) => setProducts(response.data))
       .catch((err) => {
         console.error(err);

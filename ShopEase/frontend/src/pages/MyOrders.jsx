@@ -19,7 +19,7 @@ function MyOrders() {
     }
 
     axios
-      .get(`http://localhost:5000/api/orders/my/${phone}`)
+      .get(`https://shopease-backend-2rjx.onrender.com/api/orders/my/${phone}`)
       .then((response) => setOrders(response.data))
       .catch((err) => {
         console.error(err);
