@@ -13,6 +13,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Welcome to ShopEase API");
 });
+app.get("/test", (req, res) => {
+  res.json({ message: "Backend is working!" });
+});
 
 app.use("/api/products", require("./routes/productRoutes"));
 app.use("/api/orders", require("./routes/orderRoutes"));
